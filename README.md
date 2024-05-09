@@ -28,17 +28,45 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-/* write all the steps invloved */
+/*Step 1: Open Quartus II in your laptop.
+
+Step 2: Write code to implement SR flipflop using verilog and validating their functionality using their functional tables.
+
+Step 3: Run compilation to check for errors.
+
+Step 4: Open waveform output and load input values.
+
+Step 5: Run simulation to get the output.
+
+Step 6: Open in RTL viewers to get RTL diagram output.*/
 
 **PROGRAM**
+```
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+Developed by:VINOTHINI T
+RegisterNumber: 212223040245
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+module D_FF(D,Clock,reset,Q);
+input D,Clock,reset;
+output reg Q;
+always @ (negedge Clock)
+if(!reset)
+     Q <= 0;
+	else
+      Q <= D;	
+ endmodule
 */
+```
+### RTL LOGIC FOR FLIPFLOPS
 
-**RTL LOGIC FOR FLIPFLOPS**
+![Screenshot 2024-05-09 133839](https://github.com/Vinothini1711/SR-FLIPFLOP-USING-CASE/assets/144300204/7b7bead5-4a63-4259-89de-5a239b389252)
 
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+### TIMING DIGRAMS FOR FLIP FLOPS
+
+![Screenshot 2024-05-09 133848](https://github.com/Vinothini1711/SR-FLIPFLOP-USING-CASE/assets/144300204/80d29402-8963-4dd8-b595-be81e7b7d01d)
 
 
-**RESULTS**
+### RESULTS:
+
+Thus the D flipflop using verilog and validating their functionality using their functional tables was implemented.
